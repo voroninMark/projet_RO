@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: vle
+Description: ARTIS multimodelling and Simulation tools
+Requires:
+Version: 1.0.0
+Libs:	-L${libdir} \
+    -lpdevs-1.0
+Cflags: -I${includedir}/artis-star-1.0 -I/usr/include

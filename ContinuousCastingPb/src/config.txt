@@ -1,0 +1,14 @@
+
+// minimize z = C' *x
+<objective>
+	1*x1 + .5*x2  + x4
+</objective>
+
+// subject to Ax <= b
+// x >= 0 is implicit
+
+<constraint>
+	-2*x1 + x2 <= 5.0
+	3*x2  - x5 >= 7
+	6*x2  + 3.14*x1  = 6
+</constraint>
